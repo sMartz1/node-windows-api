@@ -2,11 +2,20 @@
   "name": "windows-api-lib",
   "version": "1.0.0",
   "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild:electron": "electron-rebuild"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "electron-rebuild": "^3.2.9"
+  }
 }
